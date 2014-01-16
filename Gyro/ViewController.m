@@ -25,6 +25,8 @@
     
     motionManager = [[CMMotionManager alloc] init];
     motionManager.deviceMotionUpdateInterval = 1.0/60;
+    self.url.text = @"10.246.29.121";
+    self.port.text = @"8080";
     [motionManager startDeviceMotionUpdates];
 }
 

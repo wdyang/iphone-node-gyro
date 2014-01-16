@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>096CB8FF-462E-417B-83FE-2E4E81AEF987</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Gyro</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>060B05EB-7238-4CFC-A638-AD42A0A5DFC4</key>
+		<string>https://github.com/pkyeck/socket.IO-objc.git</string>
+		<key>11585EC2-4483-48FA-9CD5-9BCDFA6D5151</key>
+		<string>https://github.com/HazAT/iphone-node-gyro.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Gyro.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>060B05EB-7238-4CFC-A638-AD42A0A5DFC4</key>
+		<string>../../socket-io</string>
+		<key>11585EC2-4483-48FA-9CD5-9BCDFA6D5151</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/HazAT/iphone-node-gyro.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>11585EC2-4483-48FA-9CD5-9BCDFA6D5151</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>11585EC2-4483-48FA-9CD5-9BCDFA6D5151</string>
+			<key>IDESourceControlWCCName</key>
+			<string>iphone-node-gyro</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>060B05EB-7238-4CFC-A638-AD42A0A5DFC4</string>
+			<key>IDESourceControlWCCName</key>
+			<string>socket-io</string>
+		</dict>
+	</array>
+</dict>
+</plist>

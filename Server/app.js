@@ -6,7 +6,7 @@ var express = require('express'),
     path = require('path');
 
 app.configure(function(){
-  app.set('port', 3000);
+  app.set('port', 8080);
   app.use(express.bodyParser());
   app.use(express.methodOverride());
   app.use(express.static(path.join(__dirname, 'public')));
@@ -22,6 +22,18 @@ io.sockets.on('connection', function (socket) {
 
   socket.on('move', function (data) {
     socket.broadcast.emit('move', data);
+
+    // http://en.wikipedia.org/wiki/Conversion_between_quaternions_and_Euler_angles
+    // var x=data.x;
+    // var y=data.y;
+    // var z=data.z;
+    // var w=data.w/2.0/Math.PI;
+    // var phi=Math.atan(2.0*(w*x+y*z)/(1.0-2.0*(x*x+y*y)))*180/Math.PI;
+    // var theta = Math.asin(2.0*(w*y-z*x))*180/Math.PI;
+    // var psi=Math.atan(2.0*(w*z+x*y)/(1-2.0*(y*y+z*z)))*180/Math.PI;
+    // console.log(Math.floor(phi), Math.floor(theta), Math.floor(psi));
+
+
   });
 
 });
