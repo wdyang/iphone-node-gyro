@@ -1,3 +1,6 @@
+var osc=require('node-osc');
+var oscClient = new osc.Client('127.0.0.1', 9000);
+
 var express = require('express'),
     http = require('http'),
     app = express(),
@@ -22,6 +25,8 @@ io.sockets.on('connection', function (socket) {
 
   socket.on('move', function (data) {
     socket.broadcast.emit('move', data);
+    console.log(data);
+    oscClient.send('/move', parseFloat(data.y), parseFloat(data.w),  parseFloat(data.z),  parseFloat(data.x));
 
     // http://en.wikipedia.org/wiki/Conversion_between_quaternions_and_Euler_angles
     // var x=data.x;
