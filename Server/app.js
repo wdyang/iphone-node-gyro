@@ -26,7 +26,17 @@ io.sockets.on('connection', function (socket) {
   socket.on('move', function (data) {
     socket.broadcast.emit('move', data);
     console.log(data);
-    oscClient.send('/move', parseFloat(data.y), parseFloat(data.w),  parseFloat(data.z),  parseFloat(data.x));
+    var x=parseFloat(data.x);
+    var y=parseFloat(data.y);
+    var z=parseFloat(data.z);
+    var w=parseFloat(data.w);
+    var angle = w*y/Math.abs(y);
+    if(angle<0) angle =angle + Math.PI * 2.0;
+    console.log(angle*180/Math.PI);
+    // console.log(x*x+y*y+z*z);
+    // oscClient.send('/move', parseFloat(data.y), parseFloat(data.w),  parseFloat(data.z),  parseFloat(data.x));
+    oscClient.send('/angle', angle*180/Math.PI);
+
 
     // http://en.wikipedia.org/wiki/Conversion_between_quaternions_and_Euler_angles
     // var x=data.x;
